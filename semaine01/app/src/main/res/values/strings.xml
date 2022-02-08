@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">premiere app</string>
+    <string name="msgBonjour">bonjour ma première application Android</string>
+    <string name="msgMessage">Message</string>
+    <string name="msgTelephoner">Téléphoner</string>
+    <string name="msgSMS">SMS</string>
+    <string name="msgJeu">Démarrer Jeu</string>
+    <string name="msgDevinerNombre">Bonjour %s, Devinez le nombre</string>
+    <string name="msgVerifier">Vérifier</string>
+    <string name="msgWinner">Bravo!</string>
+    <string name="msgLesser">Le nombre recherché est plus petit</string>
+    <string name="msgHigher">Le nombre recherché est plus grand!</string>
+</resources>
