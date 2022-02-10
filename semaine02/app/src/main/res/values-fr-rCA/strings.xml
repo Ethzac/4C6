@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">semaine02</string>
+    <string name="txtWarehouse">Entrepôt</string>
+    <string name="txtShort">Texte vraiment plus long</string>
+</resources>

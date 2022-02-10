@@ -18,24 +18,25 @@
         app:srcCompat="@drawable/pilot06" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txtName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Kinziy"
-        android:textSize="20dp"
+        android:text="Yiznik"
+        android:textSize="35dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/imageView2"
         android:textColor="@color/texteAmbre"/>
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txtLevel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="18dp"
         android:text="Level 0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/txtName"
         android:textColor="@color/texteAmbre"/>
 
     <ImageView
@@ -80,7 +81,7 @@
         app:srcCompat="@drawable/cube" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/nbLife"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -96,12 +97,12 @@
         android:layout_height="wrap_content"
         android:text="Life"
         android:textColor="@color/texteAmbre"
-        app:layout_constraintEnd_toEndOf="@+id/textView3"
-        app:layout_constraintStart_toStartOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintEnd_toEndOf="@+id/nbLife"
+        app:layout_constraintStart_toStartOf="@+id/nbLife"
+        app:layout_constraintTop_toBottomOf="@+id/nbLife" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/nbShield"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -117,12 +118,12 @@
         android:layout_height="wrap_content"
         android:text="Shield"
         android:textColor="@color/texteAmbre"
-        app:layout_constraintEnd_toEndOf="@+id/textView7"
-        app:layout_constraintStart_toStartOf="@+id/textView7"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintEnd_toEndOf="@+id/nbShield"
+        app:layout_constraintStart_toStartOf="@+id/nbShield"
+        app:layout_constraintTop_toBottomOf="@+id/nbShield" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/nbEnergy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -138,12 +139,12 @@
         android:layout_height="wrap_content"
         android:text="Energy"
         android:textColor="@color/texteAmbre"
-        app:layout_constraintEnd_toEndOf="@+id/textView9"
-        app:layout_constraintStart_toStartOf="@+id/textView9"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintEnd_toEndOf="@+id/nbEnergy"
+        app:layout_constraintStart_toStartOf="@+id/nbEnergy"
+        app:layout_constraintTop_toBottomOf="@+id/nbEnergy" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/nbCube"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -159,9 +160,9 @@
         android:layout_height="wrap_content"
         android:text="Cube"
         android:textColor="@color/texteAmbre"
-        app:layout_constraintEnd_toEndOf="@+id/textView11"
-        app:layout_constraintStart_toStartOf="@+id/textView11"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+        app:layout_constraintEnd_toEndOf="@+id/nbCube"
+        app:layout_constraintStart_toStartOf="@+id/nbCube"
+        app:layout_constraintTop_toBottomOf="@+id/nbCube" />
 
     <TextView
         android:id="@+id/textView13"
@@ -171,62 +172,67 @@
         android:layout_marginTop="52dp"
         android:text="Revolution"
         android:textColor="@color/texteAmbre"
-        app:layout_constraintEnd_toStartOf="@+id/slider2"
+        app:layout_constraintEnd_toStartOf="@+id/sldRev"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <com.google.android.material.slider.Slider
-        android:id="@+id/slider2"
+        android:id="@+id/sldRev"
         android:layout_width="200dp"
         android:layout_height="100dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView13"
-        app:layout_constraintEnd_toStartOf="@+id/switch1"
+        app:layout_constraintEnd_toStartOf="@+id/swcTraining"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/textView13"
         app:layout_constraintTop_toTopOf="@+id/textView13"
-        app:layout_constraintVertical_bias="0.551" />
+        app:layout_constraintVertical_bias="0.551"
+        android:valueFrom="0"
+        android:valueTo="5" />
 
     <Switch
-        android:id="@+id/switch1"
+        android:id="@+id/swcTraining"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:text="Training"
-        app:layout_constraintBottom_toBottomOf="@+id/slider2"
+        app:layout_constraintBottom_toBottomOf="@+id/sldRev"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/slider2"
-        app:layout_constraintTop_toTopOf="@+id/slider2" />
+        app:layout_constraintStart_toEndOf="@+id/sldRev"
+        app:layout_constraintTop_toTopOf="@+id/sldRev" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnStart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:text="Start"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/slider2" />
+        app:layout_constraintTop_toBottomOf="@+id/sldRev" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/imvPlanet"
         android:layout_width="228dp"
         android:layout_height="167dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/btnStart"
         app:srcCompat="@drawable/planet" />
 
     <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:rotation="-29"
-        app:layout_constraintStart_toEndOf="@+id/imageView7"
-        app:layout_constraintTop_toTopOf="@+id/imageView7"
-        app:srcCompat="@drawable/rocket" />
+        android:id="@+id/imvRocket"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintCircle="@id/imvPlanet"
+        app:layout_constraintCircleAngle="50"
+        android:rotation="-40"
+        app:layout_constraintCircleRadius="95dp"
+        app:srcCompat="@drawable/rocket"
+        tools:layout_editor_absoluteX="334dp"
+        tools:layout_editor_absoluteY="448dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
