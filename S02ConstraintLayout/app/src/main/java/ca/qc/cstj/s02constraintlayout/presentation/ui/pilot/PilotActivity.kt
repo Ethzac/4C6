@@ -17,7 +17,7 @@ import kotlin.random.Random
 class PilotActivity : AppCompatActivity() {
 
     //Permettre d'accéder aux composants graphiques (boutons, textview) de l'interface
-    private lateinit var binding: ActivityPilotBinding
+        private lateinit var binding: ActivityPilotBinding
     private val viewModel: PilotViewModel by viewModels()
 
     //private val _pilot = Pilot("Bee Zoom",10)
