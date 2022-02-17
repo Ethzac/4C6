@@ -3,4 +3,5 @@
     <string name="app_name">semaine02</string>
     <string name="txtWarehouse">Entrepôt</string>
     <string name="txtShort">Texte vraiment plus long</string>
+    <string name="level">Niveau %d</string>
 </resources>

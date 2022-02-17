@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Semaine02">
         <activity
-            android:name=".PilotActivity"
+            android:name=".presentation.ui.pilot.PilotActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

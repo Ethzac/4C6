@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ff505060"
-    tools:context=".PilotActivity">
+    tools:context=".presentation.ui.pilot.PilotActivity">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -187,8 +187,10 @@
         app:layout_constraintStart_toEndOf="@+id/textView13"
         app:layout_constraintTop_toTopOf="@+id/textView13"
         app:layout_constraintVertical_bias="0.551"
-        android:valueFrom="0"
-        android:valueTo="5" />
+        android:valueFrom="1.0"
+        android:valueTo="5.0"
+        android:stepSize="1.0"
+        android:value="3.0"/>
 
     <Switch
         android:id="@+id/swcTraining"
@@ -231,7 +233,7 @@
         app:layout_constraintCircle="@id/imvPlanet"
         app:layout_constraintCircleAngle="50"
         android:rotation="-40"
-        app:layout_constraintCircleRadius="95dp"
+        app:layout_constraintCircleRadius="90dp"
         app:srcCompat="@drawable/rocket"
         tools:layout_editor_absoluteX="334dp"
         tools:layout_editor_absoluteY="448dp" />
