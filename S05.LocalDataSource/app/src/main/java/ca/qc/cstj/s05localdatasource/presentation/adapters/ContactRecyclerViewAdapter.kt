@@ -5,7 +5,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import ca.qc.cstj.s05localdatasource.R
-import ca.qc.cstj.s05localdatasource.core.loadFromResource
 import ca.qc.cstj.s05localdatasource.domain.models.Contact
 import ca.qc.cstj.s05localdatasource.databinding.ItemContactBinding
 
@@ -16,9 +15,9 @@ class ContactRecyclerViewAdapter(var contacts: List<Contact>)
         private val binding = ItemContactBinding.bind(view)
 
         fun bind(contact: Contact) {
-            binding.txvName.text = contact.firstName + " " + contact.lastName
+            binding.txvName.text = contact.fullName
 
-            if(contact.status) {
+            if(contact.isOnline) {
                 binding.imvStatus.setImageResource(R.drawable.online)
             } else {
 

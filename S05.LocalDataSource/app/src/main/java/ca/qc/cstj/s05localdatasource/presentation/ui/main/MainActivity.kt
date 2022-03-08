@@ -5,7 +5,9 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import ca.qc.cstj.s05localdatasource.R
+import ca.qc.cstj.s05localdatasource.core.notifyAllItemChanged
 import ca.qc.cstj.s05localdatasource.databinding.ActivityMainBinding
+import ca.qc.cstj.s05localdatasource.domain.models.Contact
 import ca.qc.cstj.s05localdatasource.presentation.adapters.ContactRecyclerViewAdapter
 
 class MainActivity : AppCompatActivity() {
@@ -26,7 +28,12 @@ class MainActivity : AppCompatActivity() {
 
         viewModel.contacts.observe(this) {
             contactRecyclerViewAdapter.contacts = it
-            contactRecyclerViewAdapter.notifyDataSetChanged()
+            contactRecyclerViewAdapter.notifyAllItemChanged()
+        }
+
+        binding.btnAddContact.setOnClickListener{
+            val contact = Contact("Elden", "Ring", true)
+            viewModel.addContact(contact)
         }
     }
 }
