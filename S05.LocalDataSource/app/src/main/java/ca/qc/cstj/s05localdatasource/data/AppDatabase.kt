@@ -7,6 +7,7 @@ import androidx.room.RoomDatabase
 import androidx.sqlite.db.SupportSQLiteDatabase
 import ca.qc.cstj.s05localdatasource.core.Constants
 import ca.qc.cstj.s05localdatasource.data.repositories.ContactRepository
+import ca.qc.cstj.s05localdatasource.data.repositories.UserRepository
 import ca.qc.cstj.s05localdatasource.domain.models.Contact
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
