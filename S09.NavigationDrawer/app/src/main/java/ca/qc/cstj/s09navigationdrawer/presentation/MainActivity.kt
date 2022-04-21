@@ -1,4 +1,4 @@
-package ca.qc.cstj.s09navigationdrawer
+package ca.qc.cstj.s09navigationdrawer.presentation
 
 import android.os.Bundle
 import android.view.Menu
@@ -11,6 +11,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import ca.qc.cstj.s09navigationdrawer.R
 import ca.qc.cstj.s09navigationdrawer.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
